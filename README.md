@@ -38,6 +38,41 @@ LangChain’s modular design makes it ideal for constructing database agents, re
 
 > See below for a detailed breakdown of project details and workflow.
 ---
+## 🛠️ Technical Stack
+- **Knowledge Base**: `all-states-history.csv`,`test.db`
+- **LLM Providers**: OpenAI (GPT-4o), Azure OpenAI (GPT-4, GPT-4-1106)
+- **RAG Framework**: LangChain with Langchain-OpenAI integration
+- **Agent Orchestration**: LangChain Agents, Assistants API (Azure)
+- **Query Execution**: Function Calling, Code Interpreter 
+- **Interface**: Jupyter Notebook
+- **Package Management**: `requirements.txt`, pip
+
+## ⚙️ Dependencies
+Dependencies are listed in `requirements.txt`. Key packages:
+- **openai**: Access OpenAI’s GPT models including GPT-4o
+- **langchain**: Core framework for RAG, agents, and chains
+- **langchain-core**: Base abstractions for chat models and chains
+- **langchain-community**: Community-maintained integrations
+- **langchain-experimental**: Experimental LangChain modules and workflows
+- **langchain-openai**: Integration with OpenAI and Azure OpenAI APIs
+- **pyodbc**: Connect to SQL databases via ODBC
+- **sqlalchemy**: ORM and database abstraction
+- **tabulate**: Format query results into tables
+- **pandas**: Load and manipulate CSV/tabular data
+- **numpy**: Numeric and array processing
+- **jupyter** / **notebook**: Interactive development environment
+- **ipywidgets**: Add interactivity to notebooks
+- **matplotlib**: Basic plotting for results visualization
+
+## ⚙️ Notebooks
+| Filename | Description |
+|----------|-------------|
+| `setup_azure_openai_api.ipynb` | Connect to Azure OpenAI and run a simple prompt using LangChain |
+| `langchain_csv_dataframe_agent.ipynb` | Use a Pandas agent to query a CSV via natural language |
+| `csv_to_sql_agent_pipeline.ipynb` | Convert CSV data into SQL and use a SQL agent to extract insights |
+| `azure-openai-function_calling_with_sql_tools.ipynb` | Define custom functions and call them using Azure OpenAI |
+| `data-querying-azure-openai-assistants.ipynb` | Use the Assistants API with `code_interpreter` to answer query dataset|
+
 ## ⚙️ Getting Started
 **To run the database agent workflows in this repository:**
 ### 1. Clone the Repository
@@ -104,43 +139,6 @@ Start the notebook environment to explore the agent workflows:
 jupyter notebook
 ```
 Then run a notebook! 
-
-## 🛠️ Technical Stack
-- **Knowledge Base**: `all-states-history.csv`,`test.db`
-- **LLM Providers**: OpenAI (GPT-4o), Azure OpenAI (GPT-4, GPT-4-1106)
-- **RAG Framework**: LangChain with Langchain-OpenAI integration
-- **Agent Orchestration**: LangChain Agents, Assistants API (Azure)
-- **Query Execution**: Function Calling, Code Interpreter 
-- **Interface**: Jupyter Notebook
-- **Package Management**: `requirements.txt`, pip
-
-## ⚙️ Dependencies
-Dependencies are listed in `requirements.txt`. Key packages:
-- **openai**: Access OpenAI’s GPT models including GPT-4o
-- **langchain**: Core framework for RAG, agents, and chains
-- **langchain-core**: Base abstractions for chat models and chains
-- **langchain-community**: Community-maintained integrations
-- **langchain-experimental**: Experimental LangChain modules and workflows
-- **langchain-openai**: Integration with OpenAI and Azure OpenAI APIs
-- **pyodbc**: Connect to SQL databases via ODBC
-- **sqlalchemy**: ORM and database abstraction
-- **tabulate**: Format query results into tables
-- **pandas**: Load and manipulate CSV/tabular data
-- **numpy**: Numeric and array processing
-- **jupyter** / **notebook**: Interactive development environment
-- **ipywidgets**: Add interactivity to notebooks
-- **matplotlib**: Basic plotting for results visualization
-
-
-## ⚙️ Notebooks
-| Filename | Description |
-|----------|-------------|
-| `setup_azure_openai_api.ipynb` | Connect to Azure OpenAI and run a simple prompt using LangChain |
-| `langchain_csv_dataframe_agent.ipynb` | Use a Pandas agent to query a CSV via natural language |
-| `csv_to_sql_agent_pipeline.ipynb` | Convert CSV data into SQL and use a SQL agent to extract insights |
-| `azure-openai-function_calling_with_sql_tools.ipynb` | Define custom functions and call them using Azure OpenAI |
-| `data-querying-azure-openai-assistants.ipynb` | Use the Assistants API with `code_interpreter` to answer query dataset|
-
 
 ## ⚙️ License
 This project is released under MIT license. 
