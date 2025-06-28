@@ -146,4 +146,4 @@ Dependencies are listed in `requirements.txt`. Key packages:
 This project is released under MIT license. 
 
 > ## 📌 Credits
-> 📦  This project builds on concepts and starter code introduced in the [Building Your Own Database Agent](https://learn.deeplearning.ai/courses/building-your-own-database-agent) Adrian Gonzalez Sanchez (Data & AI Specialist at Microsoft), offered through [DeepLearning.AI](https://www.deeplearning.ai/short-courses/). While the original instructional materials provided foundational examples, this implementation has been customized and extended.
+> 📦  This project builds on concepts and starter code introduced in the [Building Your Own Database Agent](https://learn.deeplearning.ai/courses/building-your-own-database-agent) taught by Adrian Gonzalez Sanchez (Data & AI Specialist at Microsoft), offered through [DeepLearning.AI](https://www.deeplearning.ai/short-courses/). While the original instructional materials provided foundational examples, this implementation has been customized and extended.
