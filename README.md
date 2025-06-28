@@ -98,7 +98,7 @@ model = AzureChatOpenAI(
 ```
 >⚠️ ⚠️ Be sure to replace all placeholder values with your real credentials. Never commit .env files or API keys to source control.
 
-### 5. Launch Jupyter Notebook
+### 4. Launch Jupyter Notebook
 Start the notebook environment to explore the agent workflows:
 ```bash
 jupyter notebook
